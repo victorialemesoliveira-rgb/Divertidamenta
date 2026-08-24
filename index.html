@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emoções em Ação 🧠</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         MENU
+    ========================== -->
+
+    <header class="navbar">
+
+        <a href="#inicio" class="logo">
+            🧠 Emoções em Ação
+        </a>
+
+        <nav>
+            <a href="#jogo">Jogo</a>
+            <a href="#curiosidades">Curiosidades</a>
+            <a href="#flashcards">Flashcards</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+
+        <button id="temaBtn">🌙</button>
+
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             INÍCIO
+        ========================== -->
+
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <span class="tag">
+                    🧠 JOGO EDUCATIVO
+                </span>
+
+                <h1>
+                    Conheça suas
+                    <span>Emoções!</span>
+                </h1>
+
+                <p>
+                    Entre em uma aventura pelo mundo das emoções.
+                    Jogue, responda perguntas, descubra curiosidades
+                    e teste sua memória.
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#jogo" class="btn principal">
+                        🎮 Jogar agora
+                    </a>
+
+                    <a href="#quiz" class="btn secundario">
+                        🧠 Fazer Quiz
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="emocoes-hero">
+
+                <div class="emocao grande alegria">
+                    😊
+                </div>
+
+                <div class="emocao tristeza">
+                    😢
+                </div>
+
+                <div class="emocao raiva">
+                    😡
+                </div>
+
+                <div class="emocao medo">
+                    😨
+                </div>
+
+                <div class="emocao nojo">
+                    🤢
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             JOGO
+        ========================== -->
+
+        <section id="jogo" class="section jogo-section">
+
+            <div class="section-title">
+
+                <span>01</span>
+
+                <h2>🎮 Central das Emoções</h2>
+
+            </div>
+
+            <p class="descricao">
+                Uma emoção aparecerá na tela. Escolha a situação
+                que combina melhor com ela!
+            </p>
+
+
+            <div class="game">
+
+                <div class="game-header">
+
+                    <div>
+                        ❤️ Vidas:
+                        <span id="vidas">❤️❤️❤️</span>
+                    </div>
+
+                    <div>
+                        ⭐ Pontos:
+                        <span id="pontos">0</span>
+                    </div>
+
+                    <div>
+                        ⏱️ Tempo:
+                        <span id="tempo">30</span>
+                    </div>
+
+                </div>
+
+
+                <div class="game-emocao">
+
+                    <div id="emojiJogo">
+                        😊
+                    </div>
+
+                    <h3 id="nomeEmocao">
+                        Alegria
+                    </h3>
+
+                    <p>
+                        Qual situação combina com essa emoção?
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="opcoesJogo"
+                    class="opcoes-jogo"
+                >
+                </div>
+
+
+                <div id="mensagemJogo" class="mensagem">
+                    Escolha uma resposta!
+                </div>
+
+
+                <button
+                    id="novoDesafio"
+                    class="btn principal"
+                >
+                    🔄 Novo desafio
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CURIOSIDADES
+        ========================== -->
+
+        <section id="curiosidades" class="section dark">
+
+            <div class="section-title">
+
+                <span>02</span>
+
+                <h2>💡 Curiosidades</h2>
+
+            </div>
+
+            <div class="curiosidade">
+
+                <div
+                    id="numeroCuriosidade"
+                    class="numero"
+                >
+                    01
+                </div>
+
+                <div class="curiosidade-content">
+
+                    <div
+                        id="iconeCuriosidade"
+                        class="icone-curiosidade"
+                    >
+                        😊
+                    </div>
+
+                    <h3 id="tituloCuriosidade">
+                        As emoções trabalham juntas
+                    </h3>
+
+                    <p id="textoCuriosidade">
+                        Na vida real, podemos sentir várias emoções
+                        ao mesmo tempo. Uma situação pode causar alegria,
+                        medo, tristeza ou outras emoções simultaneamente.
+                    </p>
+
+                    <button
+                        id="proximaCuriosidade"
+                        class="btn principal"
+                    >
+                        Próxima curiosidade →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EMOÇÕES
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-title">
+
+                <span>03</span>
+
+                <h2>🌈 Conheça as emoções</h2>
+
+            </div>
+
+            <div class="emocoes-grid">
+
+                <article class="emocao-card alegria-card">
+
+                    <div>😊</div>
+
+                    <h3>Alegria</h3>
+
+                    <p>
+                        Está relacionada a momentos agradáveis,
+                        diversão, conquistas e conexão com outras pessoas.
+                    </p>
+
+                </article>
+
+
+                <article class="emocao-card tristeza-card">
+
+                    <div>😢</div>
+
+                    <h3>Tristeza</h3>
+
+                    <p>
+                        Pode aparecer diante de perdas ou momentos difíceis
+                        e também pode ajudar a buscar apoio.
+                    </p>
+
+                </article>
+
+
+                <article class="emocao-card raiva-card">
+
+                    <div>😡</div>
+
+                    <h3>Raiva</h3>
+
+                    <p>
+                        Pode surgir quando sentimos injustiça,
+                        frustração ou quando nossos limites são ultrapassados.
+                    </p>
+
+                </article>
+
+
+                <article class="emocao-card medo-card">
+
+                    <div>😨</div>
+
+                    <h3>Medo</h3>
+
+                    <p>
+                        Ajuda a identificar perigos e pode preparar
+                        o corpo para agir diante de uma ameaça.
+                    </p>
+
+                </article>
+
+
+                <article class="emocao-card nojo-card">
+
+                    <div>🤢</div>
+
+                    <h3>Nojo</h3>
+
+                    <p>
+                        Pode nos afastar de situações, alimentos ou
+                        coisas que percebemos como desagradáveis.
+                    </p>
+
+                </article>
+
+
+                <article class="emocao-card ansiedade-card">
+
+                    <div>😰</div>
+
+                    <h3>Ansiedade</h3>
+
+                    <p>
+                        Pode aparecer diante de incertezas ou preocupações
+                        sobre acontecimentos futuros.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FLASHCARDS
+        ========================== -->
+
+        <section id="flashcards" class="section flash-section dark">
+
+            <div class="section-title">
+
+                <span>04</span>
+
+                <h2>🃏 Flashcards</h2>
+
+            </div>
+
+            <p class="descricao">
+                Clique no cartão para descobrir a resposta.
+            </p>
+
+
+            <div class="flashcard-container">
+
+                <div id="flashcard" class="flashcard">
+
+                    <div class="flash-front">
+
+                        <span id="flashNumero">
+                            1 / 6
+                        </span>
+
+                        <div class="flash-icon">
+                            🧠
+                        </div>
+
+                        <h3 id="flashPergunta">
+                            O que é uma emoção?
+                        </h3>
+
+                        <small>
+                            Clique para virar
+                        </small>
+
+                    </div>
+
+
+                    <div class="flash-back">
+
+                        <div class="flash-icon">
+                            💡
+                        </div>
+
+                        <h3>Resposta</h3>
+
+                        <p id="flashResposta">
+                            Emoções são respostas que fazem parte
+                            da nossa experiência diante de situações.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="flash-buttons">
+
+                    <button
+                        id="flashAnterior"
+                        class="btn secundario"
+                    >
+                        ← Anterior
+                    </button>
+
+                    <button
+                        id="flashProximo"
+                        class="btn principal"
+                    >
+                        Próximo →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             QUIZ
+        ========================== -->
+
+        <section id="quiz" class="section">
+
+            <div class="section-title">
+
+                <span>05</span>
+
+                <h2>🧠 Quiz das Emoções</h2>
+
+            </div>
+
+
+            <div
+                id="quizContainer"
+                class="quiz-container"
+            >
+
+                <div class="quiz-top">
+
+                    <span id="questaoNumero">
+                        Questão 1 de 6
+                    </span>
+
+                    <span>
+                        ⭐
+                        <span id="quizPontos">
+                            0
+                        </span>
+                    </span>
+
+                </div>
+
+
+                <div class="progresso">
+
+                    <div id="barraProgresso"></div>
+
+                </div>
+
+
+                <h3 id="perguntaQuiz">
+                    Qual emoção está relacionada à sensação
+                    de perigo?
+                </h3>
+
+
+                <div
+                    id="alternativasQuiz"
+                    class="alternativas"
+                >
+                </div>
+
+
+                <div
+                    id="feedbackQuiz"
+                    class="feedback"
+                >
+                </div>
+
+
+                <button
+                    id="proximaPergunta"
+                    class="btn principal"
+                >
+                    Próxima pergunta →
+                </button>
+
+            </div>
+
+
+            <!-- RESULTADO -->
+
+            <div
+                id="resultadoQuiz"
+                class="resultado hidden"
+            >
+
+                <div class="trofeu">
+                    🏆
+                </div>
+
+                <h2>
+                    Parabéns!
+                </h2>
+
+                <p id="textoResultado">
+                    Você terminou o quiz!
+                </p>
+
+                <div
+                    id="porcentagem"
+                    class="porcentagem"
+                >
+                    0%
+                </div>
+
+                <button
+                    id="reiniciarQuiz"
+                    class="btn principal"
+                >
+                    🔄 Jogar novamente
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FINAL
+        ========================== -->
+
+        <section class="final">
+
+            <div>
+
+                <span>🧠</span>
+
+                <h2>
+                    Todas as emoções têm um papel.
+                </h2>
+
+                <p>
+                    Conhecer e compreender nossas emoções pode nos ajudar
+                    a entender melhor nossos sentimentos e nossas relações
+                    com outras pessoas.
+                </p>
+
+                <a
+                    href="#inicio"
+                    class="btn principal"
+                >
+                    ↑ Voltar ao início
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <strong>
+            🧠 Emoções em Ação
+        </strong>
+
+        <p>
+            Jogo educativo inspirado no universo das emoções.
+        </p>
+
+        <small>
+            Projeto escolar • 2026
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
